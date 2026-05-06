@@ -1,0 +1,8 @@
+:root {
+    /* colors - RGB */
+    color-scheme: light;
+    --body-color: 10 6 13;
+    --body-bg: 242 245 253;
+    --accent: 255 95 162;
+    --accent-dark: 207 52 118;
+}
