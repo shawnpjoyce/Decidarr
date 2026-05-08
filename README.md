@@ -1,17 +1,23 @@
 # Decidarr
 
-May the odds be forever in your favor! A Plex movie roulette app that randomly selects a movie from your library.
+May the odds be forever in your favor!
 
-## INFO
+Decidarr is a Plex movie roulette app that randomly selects a movie from your library.
 
-Decidarrr is a vanilla PHP, SQLite, and JavaScript web app that connects to your Plex server, shows recently uploaded movies, and randomly selects a movie from your library in a random game. It uses Docker, Nginx, PDO, CSRF protection, escaped output, and server-side poster proxying to keep Plex tokens out of browser URLs.
+## Info
 
-- Help users pick movies or shows faster
-- Support household or family voting
-- Edit lists to help personalize your selection
-- Use local or Plex-based media library information
-- Provide a clean web interface
-- Keep the app simple, local and self-hostable
+Decidarr is a vanilla PHP, SQLite, and JavaScript web app that connects to your Plex server, shows recently uploaded movies, and randomly selects a movie from your library.
+
+It uses Docker, Nginx, PDO, CSRF protection, escaped output, and server-side poster proxying to help keep Plex tokens out of browser URLs.
+
+## Features
+
+- Help users pick movies or shows faster.
+- Support household or family voting.
+- Edit lists to help personalize movie selection.
+- Use local or Plex-based media library information.
+- Provide a clean web interface.
+- Keep the app simple, local, and self-hostable.
 
 ## Screenshots
 
