@@ -96,7 +96,7 @@ button {
     align-self: center;
     justify-self: center;
     margin-inline: auto;
-    z-index: 2;
+    z-index: 2; /* In mobile this and the position need to change but need a solution first */
     border: 2px solid rgb(var(--white));
     background: rgb(var(--pink));
     color: rgb(var(--white));

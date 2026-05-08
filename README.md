@@ -13,6 +13,12 @@ Decidarrr is a vanilla PHP, SQLite, and JavaScript web app that connects to your
 - Provide a clean web interface
 - Keep the app simple, local and self-hostable
 
+## Screenshots
+
+![home screenshot](docs/screenshots/screenshot_decidarr.png)
+
+![results screenshot](docs/screenshots/screenshot_decidarr_results.png)
+
 ## How to run
 
 - .env configure
