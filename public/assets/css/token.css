@@ -1,8 +1,58 @@
 :root {
-    /* colors - RGB */
+    /* Colors are RGB channels so opacity can be applied with rgb(var(--token) / alpha). */
     color-scheme: light;
     --body-color: 10 6 13;
     --body-bg: 242 245 253;
+    --text-muted: 111 100 120;
+    --content-panel: 250 250 250;
+    --line-break: 234 223 237;
     --accent: 255 95 162;
     --accent-dark: 207 52 118;
+    --success: 27 168 137;
+    --info: 84 117 237;
+    --warning: 246 183 60;
+    --danger: 180 35 26;
+    --danger-bg: 255 238 236;
+    --danger-border: 246 181 173;
+    --white: 255 255 255;
+    --pink: var(--accent);
+    --pink-dark: var(--accent-dark);
+    --muted: var(--text-muted);
+    --sky: var(--info);
+    --blue: 235 249 255;
+    --button-shadow: 185 45 109;
+    --button-disabled: 184 185 194;
+    --button-disabled-shadow: 133 134 145;
+    --poster-bg: 36 24 51;
+    --poster-mystery-start: 39 28 53;
+    --poster-mystery-end: 60 39 87;
+    --title-blue: 83 98 246;
+    --title-blue-shadow: 228 133 248;
+    --title-red: 237 98 92;
+    --title-red-shadow: 242 160 99;
+    --title-green: 19 168 142;
+    --title-green-shadow: 255 213 95;
+    --meta-border: 240 215 227;
+    --meta-text: 94 74 102;
+    --shadow-color: 34 21 45;
+    --burst-opacity: 0.2;
+    --burst-overlay: 10 10 20;
+    --burst-overlay-opacity: 0.2;
+    /* bg burst after movie is selected */
+    --burst:
+        repeating-conic-gradient(
+            from 0deg,
+            rgb(var(--white) / 0.34) 0deg 4deg,
+            rgb(var(--info) / 0.1) 4deg 8deg,
+            rgb(var(--accent) / 0.1) 8deg 12deg,
+            rgb(var(--warning) / 0.1) 12deg 16deg
+        ),
+        radial-gradient(circle, rgb(var(--white) / 0.52) 0 8%, rgb(var(--info) / 0.34) 42%, rgb(var(--sky) / 0.24) 100%);
+    --shadow: 0 18px 48px rgb(var(--shadow-color) / 0.14);
+    /* container */
+    --container-fluid-width: 100dvw;
+    --container-gutter-x: clamp(1rem, 3vw, 2rem);
+    /* font */
+    --font-display-xl: clamp(2.25rem, 4vw, 4.5rem);
+    --font-face: ui-rounded, "Avenir Next", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }

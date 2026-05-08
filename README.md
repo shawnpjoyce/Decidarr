@@ -6,6 +6,13 @@ May the odds be forever in your favor! A Plex movie roulette app that randomly s
 
 Decidarrr is a vanilla PHP, SQLite, and JavaScript web app that connects to your Plex server, shows recently uploaded movies, and randomly selects a movie from your library in a random game. It uses Docker, Nginx, PDO, CSRF protection, escaped output, and server-side poster proxying to keep Plex tokens out of browser URLs.
 
+- Help users pick movies or shows faster
+- Support household or family voting
+- Edit lists to help personalize your selection
+- Use local or Plex-based media library information
+- Provide a clean web interface
+- Keep the app simple, local and self-hostable
+
 ## How to run
 
 - .env configure
@@ -22,3 +29,12 @@ PLEX_LIBRARY_SECTION_ID=
 - SQLite placed in '/storage'.
 - Only stores recent movies selected.
 - User credientials or tokens are stored in .env-- SQLite is schema only.
+
+## Security 
+- All database queries are prepared with binded parameters for SQL injection measures.
+- Output data is HTML-escaped before rendering within the controller for XSS prevention.
+- Mutating form elements require a session-baked synchronize token.
+- Poster art for the movie is proxied by PHP. Avoiding the use of Plex token being public, placed in the view render output or put in the URL. Tested in Chrome, Firefox, and Librewolf. 
+- SSRF Hardening. Plex URLs are limited to `http`/`https`, credentials in URLs are rejected, redirects are disabled, requests time out quickly, and cloud metadata/link-local hosts are blocked.
+- Browser hardening: CSP, frame denial, nosniff, referrer policy, permissions policy, HttpOnly/SameSite session cookies.
+- Data isolation: Nginx serves only `public/`; SQLite lives in `/storage`.
