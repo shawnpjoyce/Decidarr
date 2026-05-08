@@ -31,7 +31,7 @@ $buttonLabel = is_array($movie) ? 'Spin Again?' : 'Spin'; /* Button DOM response
                                         <?php endforeach; ?>
                                     </div>
                                 <?php endif; ?>
-
+                                    <p class="result-label">decidarr</p>
                                 <?php if (is_array($movie)): ?>
                                     <article class="movie-card is-revealed" data-reveal-card>
                                         <div class="poster-prize">
@@ -44,7 +44,6 @@ $buttonLabel = is_array($movie) ? 'Spin Again?' : 'Spin'; /* Button DOM response
                                             </div>
                                         </div>
                                         <div class="movie-details">
-                                            <p class="result-label">decidarr</p>
                                             <h2 class="playful-title" aria-label="<?= Security::escape($title) ?>">
                                                 <?php foreach ($titleLetters as $letter): ?>
                                                     <span aria-hidden="true"><?= $letter === ' ' ? '&nbsp;' : Security::escape($letter) ?></span>
@@ -61,7 +60,6 @@ $buttonLabel = is_array($movie) ? 'Spin Again?' : 'Spin'; /* Button DOM response
                                 <?php endif; ?>
 
                                 <div class="picker-stack">
-                                    <p class="result-label">decidarr</p>
                                     <button
                                         class="pull-button"
                                         type="button"
